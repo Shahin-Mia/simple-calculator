@@ -1,0 +1,58 @@
+$display-color: rgba(32, 32, 32, 0.877);
+$cal-body-color: #13cc8e;
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+main{
+    #display{
+        height: 80px;
+        width: 275px;
+        background-color: $display-color;
+        margin: auto;
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-around;
+        flex-direction: column;
+        padding: 3px 5px;
+        word-wrap: break-word;
+        word-break: break-all;
+        .previous-operand{
+            color: rgba(255, 255, 255, .75);
+            font-size: 1rem;
+        }
+        .current-operand{
+            color: white;
+            font-size: 2rem;
+        }
+
+    }
+    height: 380px;
+    width: 300px;
+    margin: 100px auto 0px;
+    padding: 10px 0px;
+    background-color: $cal-body-color;
+    border-radius: 5px;
+}
+ul{
+    list-style: none;
+    margin-left: 5px;
+    li{
+        width: 50px;
+        height: 50px;
+        background: #287a59;
+        display: inline-block;
+        text-align: center;
+        margin: 10px;
+        font-size: 25px;
+        color: #dddddd;
+        padding-top: 10px;
+        border-radius: 10px;
+        box-shadow: 1px 1px 1px gray;
+        cursor: pointer;
+        &:hover{
+            background-color: #58b891;
+        }
+    }
+}
